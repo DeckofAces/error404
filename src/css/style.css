@@ -45,13 +45,19 @@ main {
   margin: 10em 0 0 0;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 5%;
+  padding-bottom: 5em;
 }
-main img {
-  width: 37em;
+main .left {
+  width: 70%;
+  padding-left: 5%;
+  margin: 0 auto;
+}
+main .left img {
+  width: 70%;
 }
 main .right {
   width: 40%;
+  padding-right: 5%;
 }
 main h3 {
   font-weight: 700;
@@ -62,7 +68,7 @@ main p {
 }
 main button {
   background-color: #182725;
-  padding: 2%;
+  padding: 1em;
   color: #fff;
 }
 
@@ -74,6 +80,21 @@ footer {
   justify-content: space-around;
   position: absolute;
   bottom: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 10%;
+    padding-bottom: 20vh;
+  }
+
+  [class="404-text"] {
+    padding-bottom: 5vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
