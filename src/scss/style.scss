@@ -12,13 +12,19 @@ header {
     }
 }
 
+/*Page Container */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 /* Main */
 main {
-
     display: flex;
     margin: 10em 0 0 0;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 5%;
 
     img {
         width: 37em;
@@ -48,21 +54,9 @@ main {
 /* Footer */
 footer {
     color: #bdbdbd;
-    position: fixed;
-    bottom: 1vh;
-    left: 43vw;
-}
-
-@media screen and (max-width: 1024px) {
-    main {
-        flex-direction: column;
-
-        .right {
-            padding-top: 10%;
-        }
-
-        p {
-            margin-top: 2vh;
-        }
-    }
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 1%;
 }

@@ -33,12 +33,19 @@ header p {
   padding: 2em 0 0 4em;
 }
 
+/*Page Container */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 /* Main */
 main {
   display: flex;
   margin: 10em 0 0 0;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 5%;
 }
 main img {
   width: 37em;
@@ -62,21 +69,11 @@ main button {
 /* Footer */
 footer {
   color: #bdbdbd;
-  position: fixed;
-  bottom: 1vh;
-  left: 43vw;
-}
-
-@media screen and (max-width: 1024px) {
-  main {
-    flex-direction: column;
-  }
-  main .right {
-    padding-top: 10%;
-  }
-  main p {
-    margin-top: 2vh;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
